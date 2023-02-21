@@ -116,3 +116,31 @@ header {
     justify-content: space-between;
     padding: 11px 29px;
   }
+
+   /*Add styles to footer*/
+footer {
+    width: 100%;
+    height: auto;
+    padding-top: 10px;
+    background-color: #ffb400;
+    clear: both;
+    position: relative;
+    line-height: 30px;
+    text-align: center;
+  }
+  
+  .footer-links>li {
+      display: inline;
+      color: #4b0f70;
+  }
+  
+  .footer-links i {
+      font-size: 3rem;
+      margin: 10px;
+  }
+  
+  .footer-links i:hover,
+  .footer-links i:focus {
+      transform: scale(1.50);
+      cursor: pointer;
+  }
