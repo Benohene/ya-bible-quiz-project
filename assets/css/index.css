@@ -95,3 +95,64 @@ header {
     font-weight: 600;
     cursor: pointer;
 }
+
+/*Add styles to the instruction pop up box*/
+.instructions {
+    display: ;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(75, 15, 112, 80%);
+}
+
+.instructions-content {
+    width: 50%;
+    text-align: center;
+    background-color: #4b0f70;
+    margin: 15% auto;
+    padding: 18px;
+    border: 3px solid #fff;
+    border-radius: 20px;
+}
+
+.instruction-header {
+    background-color: #F49F1C;
+    color: #030E4F;
+    font-size: 30px;
+    margin-bottom: 1rem;
+}
+
+.instruction-list {
+    text-align: center;
+    list-style-position: inside;
+    margin-bottom: 15px;
+    font-size: 140%;
+    font-weight: 600;
+    line-height: 40px;
+}
+
+li:nth-child(5) {
+    color: #F49F1C;
+    list-style: none;
+    font-style: italic;
+    font-weight: 600;
+}
+
+/*Add styles to the Instruction close button*/
+.exit {
+    color: white;
+    font-size: 20px;
+    padding-bottom: 10px;
+    font-weight: 600;
+}
+
+.exit:hover,
+.exit:focus {
+    transform: scale(1.25);
+    cursor: pointer;
+    color: #F49F1C;
+}
