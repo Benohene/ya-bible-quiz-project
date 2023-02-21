@@ -212,3 +212,12 @@ footer {
     font-weight: 600;
     color: #ffffff;
   }
+
+  /*Media Queries*/
+  @media screen and (max-width: 1200px) {
+    #display-container{
+       
+      width: 70%;
+      
+  }
+  }
