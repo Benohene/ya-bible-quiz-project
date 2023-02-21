@@ -153,8 +153,7 @@ const quizDisplay = (questionCount) => {
    * Quiz Creation to generate the quiz
    * //generate randomly questions and options, so user cant guess answers upon replay
    */
-function quizCreator() {
-    
+function quizCreator() {  
     quizArray.sort(() => Math.random() - 0.5);
     for (let i of quizArray) {
       i.options.sort(() => Math.random() - 0.5);
@@ -177,3 +176,31 @@ function quizCreator() {
       quizContainer.appendChild(div);
     }
   }
+
+  /**
+ * Checks the answer against each question
+ * if right option is selected, the return is correct
+ * if wrong option is selected, the return is incorrect
+ */
+  //Checker Function to check if option is correct or not
+function checker(userOption) {
+    let userSolution = userOption.innerText;
+    let question =
+      document.getElementsByClassName("container-mid")[questionCount];
+    let options = question.querySelectorAll(".option-div");
+  
+    //if user clicked answer == correct option stored in object
+    if (userSolution === quizArray[questionCount].correct) {
+      userOption.classList.add("correct");
+      scoreCount++;
+    } else {
+      userOption.classList.add("incorrect");
+      //For marking the correct option
+      options.forEach((element) => {
+        if (element.innerText == quizArray[questionCount].correct) {
+          element.classList.add("correct");
+        }
+      });
+    }
+
+    
