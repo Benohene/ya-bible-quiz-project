@@ -33,7 +33,7 @@ header {
     align-items: center;
     justify-content: center;
     width: 60%;
-    height: 850px;
+    height: 870px;
     margin: 2rem auto 13rem auto;
 }
 
@@ -98,7 +98,7 @@ header {
 
 /*Add styles to the instruction pop up box*/
 .instructions {
-    display: ;
+    display: none;
     position: fixed;
     z-index: 1;
     left: 0;
@@ -156,3 +156,31 @@ li:nth-child(5) {
     cursor: pointer;
     color: #F49F1C;
 }
+
+/*Add styles to footer*/
+footer {
+    width: 100%;
+    height: auto;
+    padding-top: 10px;
+    background-color: #ffb400;
+    clear: both;
+    position: relative;
+    line-height: 30px;
+    text-align: center;
+  }
+  
+  .footer-links>li {
+      display: inline;
+      color: #4b0f70;
+  }
+  
+  .footer-links i {
+      font-size: 3rem;
+      margin: 10px;
+  }
+  
+  .footer-links i:hover,
+  .footer-links i:focus {
+      transform: scale(1.50);
+      cursor: pointer;
+  }
