@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Oswald:wght@500;600;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+    background-image: linear-gradient(rgba(231, 134, 226, 0.5), rgba(44, 0, 29, 0.7)), url(../images/main-background.jpg);
+}
