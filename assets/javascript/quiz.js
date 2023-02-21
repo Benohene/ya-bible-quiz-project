@@ -1,8 +1,9 @@
 // Assign the IDS and CLASS to variables
-let timeLeft = document.querySelector("time-left");
+let timeLeft = document.querySelector(".time-left");
 let quizContainer = document.getElementById("container");
 let nextBtn = document.getElementById("next-button");
 let countOfQuestion = document.querySelector(".number-of-question");
+let displayContainer = document.getElementById("display-container");
 let scoreContainer = document.querySelector(".score-container");
 let restart = document.getElementById("restart");
 let userScore = document.getElementById("user-score");
@@ -10,10 +11,9 @@ let startScreen = document.querySelector(".start-screen");
 let startButton = document.getElementById("start-button");
 let questionCount;
 let scoreCount = 0;
-#
-//Assign the count to 21 to achieve 20s countdown for each question
 let count = 21;
 let countdown;
+
 
 /**
  * Add quiz Arrays
@@ -89,7 +89,7 @@ restart.addEventListener("click", () => {
     initial();
     displayContainer.classList.remove("hide");
     scoreContainer.classList.add("hide");
-});
+  });
 
 //Next Button
 /**
@@ -100,28 +100,28 @@ restart.addEventListener("click", () => {
 nextBtn.addEventListener(
     "click",
     (displayNext = () => {
-        //increment questionCount
-        questionCount += 1;
-        //if last question
-        if (questionCount == quizArray.length) {
-            //hide question container and display score
-            displayContainer.classList.add("hide");
-            scoreContainer.classList.remove("hide");
-            //user score
-            userScore.innerHTML =
-                "Your score is " + scoreCount + " out of " + questionCount;
-        } else {
-            //display questionCount
-            countOfQuestion.innerHTML =
-                questionCount + 1 + " of " + quizArray.length + " Question";
-            //display quiz
-            quizDisplay(questionCount);
-            count = 21;
-            clearInterval(countdown);
-            timerDisplay();
-        }
+      //increment questionCount
+      questionCount += 1;
+      //if last question
+      if (questionCount == quizArray.length) {
+        //hide question container and display score
+        displayContainer.classList.add("hide");
+        scoreContainer.classList.remove("hide");
+        //user score
+        userScore.innerHTML =
+          "Your score is " + scoreCount + " out of " + questionCount;
+      } else {
+        //display questionCount
+        countOfQuestion.innerHTML =
+          questionCount + 1 + " of " + quizArray.length + " Question";
+        //display quiz
+        quizDisplay(questionCount);
+        count = 21;
+        clearInterval(countdown);
+        timerDisplay();
+      }
     })
-);
+  );
 
 /**
  * Assign Timer to countdown
@@ -139,7 +139,7 @@ const timerDisplay = () => {
   };
 
   //Display quiz
-const quizDisplay = (questionCount) => {
+  const quizDisplay = (questionCount) => {
     let quizCards = document.querySelectorAll(".container-mid");
     //Hide other cards
     quizCards.forEach((card) => {
@@ -149,40 +149,44 @@ const quizDisplay = (questionCount) => {
     quizCards[questionCount].classList.remove("hide");
   };
 
+
   /**
    * Quiz Creation to generate the quiz
    * //generate randomly questions and options, so user cant guess answers upon replay
    */
-function quizCreator() {  
-    quizArray.sort(() => Math.random() - 0.5);
-    for (let i of quizArray) {
-      i.options.sort(() => Math.random() - 0.5);
-      let div = document.createElement("div");
-      div.classList.add("container-mid", "hide");
-      //question number
-      countOfQuestion.innerHTML = 1 + " of " + quizArray.length + " Question";
-      //question
-      let question_DIV = document.createElement("p");
-      question_DIV.classList.add("question");
-      question_DIV.innerHTML = i.question;
-      div.appendChild(question_DIV);
-      //options
-      div.innerHTML += `
-      <button class="option-div" onclick="checker(this)">${i.options[0]}</button>
-       <button class="option-div" onclick="checker(this)">${i.options[1]}</button>
-        <button class="option-div" onclick="checker(this)">${i.options[2]}</button>
-         <button class="option-div" onclick="checker(this)">${i.options[3]}</button>
-      `;
-      quizContainer.appendChild(div);
-    }
+function quizCreator() {
+  //randomly sort questions
+  quizArray.sort(() => Math.random() - 0.5);
+  //generate quiz
+  for (let i of quizArray) {
+    //randomly sort options
+    i.options.sort(() => Math.random() - 0.5);
+    //quiz card creation
+    let div = document.createElement("div");
+    div.classList.add("container-mid", "hide");
+    //question number
+    countOfQuestion.innerHTML = 1 + " of " + quizArray.length + " Question";
+    //question
+    let question_DIV = document.createElement("p");
+    question_DIV.classList.add("question");
+    question_DIV.innerHTML = i.question;
+    div.appendChild(question_DIV);
+    //options
+    div.innerHTML += `
+    <button class="option-div" onclick="checker(this)">${i.options[0]}</button>
+     <button class="option-div" onclick="checker(this)">${i.options[1]}</button>
+      <button class="option-div" onclick="checker(this)">${i.options[2]}</button>
+       <button class="option-div" onclick="checker(this)">${i.options[3]}</button>
+    `;
+    quizContainer.appendChild(div);
   }
+}
 
-  /**
+/**
  * Checks the answer against each question
  * if right option is selected, the return is correct
  * if wrong option is selected, the return is incorrect
  */
-  //Checker Function to check if option is correct or not
 function checker(userOption) {
     let userSolution = userOption.innerText;
     let question =
@@ -203,4 +207,35 @@ function checker(userOption) {
       });
     }
 
-    
+      //clear interval(stop timer)
+  clearInterval(countdown);
+  //disable all options
+  options.forEach((element) => {
+    element.disabled = true;
+  });
+}
+
+//initial setup
+function initial() {
+  quizContainer.innerHTML = "";
+  questionCount = 0;
+  scoreCount = 0;
+  count = 21;
+  clearInterval(countdown);
+  timerDisplay();
+  quizCreator();
+  quizDisplay(questionCount);
+}
+
+//when user click on start button
+startButton.addEventListener("click", () => {
+    startScreen.classList.add("hide");
+    displayContainer.classList.remove("hide");
+    initial();
+  });
+  
+  //hide quiz and display start screen
+  window.onload = () => {
+    startScreen.classList.remove("hide");
+    displayContainer.classList.add("hide");
+  };

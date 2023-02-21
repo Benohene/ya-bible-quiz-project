@@ -145,10 +145,6 @@ footer {
       cursor: pointer;
   }
 
-  .hide {
-    display: none;
-  }
-
   /*Add styles to the next Question button*/
   #next-button {
     font-size: 20px;
@@ -162,6 +158,55 @@ footer {
   }
   
   /*Add styles to score page*/
+  #user-score {
+    font-size: 50px;
+    font-weight: 600;
+    color: #ffffff;
+  }
+
+  .question {
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 30px
+  }
+  .option-div {
+    font-size: 20px;
+    width: 100%;
+    padding: 16px;
+    margin: 10px 0;
+    text-align: left;
+    outline: none;
+    background: #ffb400;
+    border: 5px solid #ffffff;
+    border-radius: 20px;
+  }
+  .option-div:disabled {
+    color: #000000;
+    cursor: not-allowed;
+  }
+  #next-button {
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 1.5em;
+    background-color: #ffffff;
+    color: #4b0f70;
+    padding: 0.7em 1.8em;
+    border-radius: 0.3em;
+    float: right;
+  }
+  .hide {
+    display: none;
+  }
+  .incorrect {
+    background-color: #ffdde0;
+    color: #d32f2f;
+    border-color: #d32f2f;
+  }
+  .correct {
+    background-color: #e7f6d5;
+    color: #689f38;
+    border-color: #689f38;
+  }
   #user-score {
     font-size: 50px;
     font-weight: 600;
