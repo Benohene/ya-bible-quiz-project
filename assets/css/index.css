@@ -96,7 +96,7 @@ header {
     cursor: pointer;
 }
 
-/*Add styles to the instruction pop up box*/
+/*Add styling to instructions pop up box*/
 .instructions {
     display: none;
     position: fixed;
@@ -106,17 +106,18 @@ header {
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgba(75, 15, 112, 80%);
+    background-color: rgba(0, 0, 0, 80%);
 }
 
-.instructions-content {
+.instruction-content {
     width: 50%;
     text-align: center;
-    background-color: #4b0f70;
+    color: white;
+    background-color: #330650;
     margin: 15% auto;
     padding: 18px;
-    border: 3px solid #fff;
-    border-radius: 20px;
+    border: 3px solid white;
+    border-radius: 15px;
 }
 
 .instruction-header {
