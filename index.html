@@ -1,26 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="YA Bible Quiz project is a quiz game project for Churches to help build their bible knowledge">
+    <meta name="description"
+        content="YA Bible Quiz project is a quiz game project for Churches to help build their bible knowledge">
     <meta name="keywords" content="bible, knowledge, quiz, church quiz, quiz game">
     <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="assets/css/index.css">
     <title>YA Bible Quiz</title>
 </head>
+
 <body>
     <!--Add Header - Logo with homepage link-->
     <header>
-
+        <a href="index.html"><img src="assets/images/logo-main-2.png" alt="Main logo" id="logo"></a>
     </header>
 
     <!--Add main content of the Homepage-->
     <main>
-        <section></section>
+        <!--Add Homepage Details-->
+        <section class="homepage-info">
+            <h1>Test your General Bible Knowledge-Get to know the Basics</h1>
+            <h2 class="homepage-p1">
+                It is very important to know the Basic of your Bible. This is a Quiz
+                Game designed to help you test you Knowledge in the Bible and also get
+                to learn new thing you might not know. You will answer 10 Basic
+                questions. One question should be answered in 20 seconds. Let us see how you know the word of God.
+            </h2>
+
+            <h3 class="homepage-p2">
+                Are you up for this task? Then prepare for this short journey to
+                acquire Knowledge.
+            </h3>
+        </section>
+
+        <!--Add Instruction and play Quiz buttons and details of instruction-->
+        <section class="button-section">
+            <div class="buttons">
+                <button class="btn-class" id="instructionsBtn">INSTRUCTIONS / RULES</button>
+            </div>
+
+        <!--Add instruction-->
+        <div class="instructions" id="instruction-main">
+            <div class="instruction-content">
+              <p class="exit">close<i class="fa-regular fa-circle-xmark"></i></p>
+              <h3 class="instruction-header">
+                Bible Knowledge Quiz<br />Instructions
+              </h3>
+              <ol class="instruction-list">
+                <li>Answer 10 questions on the Bible Quiz</li>
+                <li>You will have 10 seconds to answer each questions</li>
+                <li>
+                  Choose the your answer option and click on next question
+                </li>
+                <li> ENJOY THE GAME!</li>
+                <li>Please note that the correct answer will display green and wrong red</li>
+              </ol>
+            </div>
+          </div>
+  
+          <div class="enter-game-btn">
+            <button type="button" id="lets-go">
+              ENTER THE QUIZ GAME <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>   
+        </section>
     </main>
-    
+
     <!--Add footer with social links-->
     <footer>
 
@@ -29,7 +78,9 @@
 
 
     <!--Add all script sources here-->
-    <script src="https://kit.fontawesome.com/2730ac997a.js" crossorigin="anonymous"></script><!--Font awesome-->
+    <script src="https://kit.fontawesome.com/2730ac997a.js" crossorigin="anonymous"></script>
+    <!--Font awesome-->
     <script src="assets/javascript/index.js"></script>
 </body>
+
 </html>
