@@ -13,3 +13,15 @@ body {
     text-align: center;
     background-image: linear-gradient(rgba(231, 134, 226, 0.5), rgba(44, 0, 29, 0.7)), url(../images/main-background.jpg);
 }
+
+/*Add styles to header*/
+header {
+    width: 100%;
+    height: 150px;
+    background-color: #4b0f70;
+}
+
+#logo {
+    max-width: 250px;
+    margin: 10px;
+}
