@@ -36,3 +36,62 @@ header {
     height: 850px;
     margin: 2rem auto 13rem auto;
 }
+
+.homepage-info h1 {
+    text-align: center;
+    font-size: 200%;
+    padding: 16px 0;
+    color: #F49F1C;
+    background-color: #4b0f70;
+}
+
+.homepage-p1 {
+    font-size: 150%;
+    font-weight: 800px;
+    color: #fff;
+    padding: 10px;
+    line-height: 30px;
+}
+
+.homepage-p2 {
+    font-size: 150%;
+    color: #4b0f70;
+    background-color: #F49F1C;
+    padding: 10px;
+    line-height: 30px;
+}
+
+/*Add style to the instruction/Enter Quiz buttons*/
+.buttons {
+    width: 100%;
+    padding: 2rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.btn-class {
+    width: 100%;
+    padding: .4rem .8rem;
+    background-color: #F49F1C;
+    border: 3px solid white;
+    border-radius: 50px;
+    color: #4b0f70;
+    font-size: 150%;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/*Add styles to Enter Quiz Game button*/
+#lets-go {
+    width: 100%;
+    padding: .4rem 2rem;
+    background-color: #4b0f70;
+    border: 3px solid white;
+    border-radius: 50px;
+    color: #F49F1C;
+    font-size: 1.5rem;
+    font-weight: 600;
+    cursor: pointer;
+}
