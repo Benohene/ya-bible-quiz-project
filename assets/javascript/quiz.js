@@ -83,3 +83,35 @@ const quizArray = [
     },
   ];
   //end of questions Array with options and correct answer
+
+ //Next Button
+ /**
+ * Displays the next question.
+ * if the questions end, this will dispaly the scores and play game again.
+ * or you click on the logo to return to the home page.
+ */
+nextBtn.addEventListener(
+    "click",
+    (displayNext = () => {
+      //increment questionCount
+      questionCount += 1;
+      //if last question
+      if (questionCount == quizArray.length) {
+        //hide question container and display score
+        displayContainer.classList.add("hide");
+        scoreContainer.classList.remove("hide");
+        //user score
+        userScore.innerHTML =
+          "Your score is " + scoreCount + " out of " + questionCount;
+      } else {
+        //display questionCount
+        countOfQuestion.innerHTML =
+          questionCount + 1 + " of " + quizArray.length + " Question";
+        //display quiz
+        quizDisplay(questionCount);
+        count = 16;
+        clearInterval(countdown);
+        timerDisplay();
+      }
+    })
+  );
