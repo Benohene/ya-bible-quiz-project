@@ -13,3 +13,73 @@ let scoreCount = 0;#
 //Assign the count to 21 to achieve 20s countdown for each question
 let count = 21;
 let countdown;
+
+/**
+ * Add quiz Arrays
+ * this array contains the questions of the quiz with 4 options and correct answer
+ * this will be initiated to run randomly in the quiz
+ */
+const quizArray = [
+    {
+      id: "0",
+      question: "Where in the Bible is the Book of the 1st Kings?",
+      options: ["Old Testament", "New Testament", "Not in the Bible", "Both New and Old"],
+      correct: "Old Testament",
+    },
+    {
+      id: "1",
+      question: "In what city was Jesus born?",
+      options: ["Nazareth", "Bethleham", "Egypt", "Jericho"],
+      correct: "Bethleham",
+    },
+    {
+      id: "2",
+      question: "How many books are in the New Testament?",
+      options: ["66", "33", "27", "56"],
+      correct: "27",
+    },
+    {
+      id: "3",
+      question: "Who were the first apostles called to follow Jesus?",
+      options: ["John the Baptist	", "Simon", "Judas", "James"],
+      correct: "Simon",
+    },
+    {
+      id: "4",
+      question: "How many people did Jesus feed with five loaves of bread and two fish?",
+      options: ["200", "500", "5000", "400"],
+      correct: "5000",
+    },
+  
+    {
+      id: "5",
+      question: "Matthew was a......when He met Jesus.",
+      options: ["Fisherman", "Tax Collector", "Lawyer", "Apostle"],
+      correct: "Tax Collector",
+    },
+    {
+      id: "6",
+      question: "How many days did God use to create Heaven and Earth?",
+      options: ["6", "7", "5", "4"],
+      correct: "6",
+    },
+    {
+      id: "7",
+      question: "Who baptizes Jesus?",
+      options: ["John the Baptist", "God", "James", "Peter"],
+      correct: "John the Baptist",
+    },
+    {
+      id: "8",
+      question: " Who is the first apostle to deny Jesus",
+      options: ["Judas Iscariot", "James", "Peter", "Andrew"],
+      correct: "Peter",
+    },
+    {
+      id: "9",
+      question: "She was a woman who never got her first child through a man.",
+      options: ["Esther", "Elizabeth", "Mary", "Hannah"],
+      correct: "Mary",
+    },
+  ];
+  //end of questions Array with options and correct answer
