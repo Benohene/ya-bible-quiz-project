@@ -25,3 +25,15 @@ header {
     max-width: 250px;
     margin: 10px;
 }
+
+  /*Add style to homepage*/
+  #mainContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 870px;
+    margin: 2rem auto 13rem auto;
+    color: #4b0f70;
+  }
