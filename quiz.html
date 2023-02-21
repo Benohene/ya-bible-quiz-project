@@ -20,8 +20,38 @@
     </header>
 
     <!--Add main content of the Quiz page-->
- 
-    
+    <main>
+        <!--Add start screen with Header and Start Quiz button-->
+        <div class="start-screen">
+            <h1>Are you ready to test your Bible Knowledge ?</h1>
+            <br /><br />
+            <button id="start-button">ENTER QUIZ</button>
+        </div>
+
+        <!--Add Quiz window dialog with timer, question and options-->
+        <div id="display-container">
+            <div class="header">
+                <div class="number-of-count">
+                    <span class="number-of-question">1 of 3 questions</span>
+                </div>
+
+                <!--Add timer structure-->
+                <div class="timer-div">
+                    <h3><i class="fa-solid fa-stopwatch"></i></h3>
+                    <span class="time-left">20s</span>
+                </div>
+            </div>
+            <div id="container">
+                <!-- questions and options will be displayed here -->
+            </div>
+            <button id="next-button">Next Question</button>
+        </div>
+        <div class="score-container hide">
+            <div id="user-score"></div>
+            <button id="restart">Play Again</button>
+        </div>
+    </main>
+
     <!--Add footer with social links-->
     <footer>
         <div>
