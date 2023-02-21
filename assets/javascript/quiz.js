@@ -122,3 +122,18 @@ nextBtn.addEventListener(
         }
     })
 );
+
+/**
+ * Assign Timer to countdown
+ * setInterval called to initiate the time out function
+ */
+const timerDisplay = () => {
+    countdown = setInterval(() => {
+      count--;
+      timeLeft.innerHTML = `${count}s`;
+      if (count == 0) {
+        clearInterval(countdown);
+        displayNext();
+      }
+    }, 1000);
+  };
