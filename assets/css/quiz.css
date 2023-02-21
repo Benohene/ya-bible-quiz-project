@@ -144,3 +144,9 @@ footer {
       transform: scale(1.50);
       cursor: pointer;
   }
+
+  .hide {
+    display: none;
+  }
+
+  /*Add styles to score page*/
