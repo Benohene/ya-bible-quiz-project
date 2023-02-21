@@ -116,7 +116,7 @@ nextBtn.addEventListener(
                 questionCount + 1 + " of " + quizArray.length + " Question";
             //display quiz
             quizDisplay(questionCount);
-            count = 16;
+            count = 21;
             clearInterval(countdown);
             timerDisplay();
         }
@@ -137,3 +137,43 @@ const timerDisplay = () => {
       }
     }, 1000);
   };
+
+  //Display quiz
+const quizDisplay = (questionCount) => {
+    let quizCards = document.querySelectorAll(".container-mid");
+    //Hide other cards
+    quizCards.forEach((card) => {
+      card.classList.add("hide");
+    });
+    //display current question card
+    quizCards[questionCount].classList.remove("hide");
+  };
+
+  /**
+   * Quiz Creation to generate the quiz
+   * //generate randomly questions and options, so user cant guess answers upon replay
+   */
+function quizCreator() {
+    
+    quizArray.sort(() => Math.random() - 0.5);
+    for (let i of quizArray) {
+      i.options.sort(() => Math.random() - 0.5);
+      let div = document.createElement("div");
+      div.classList.add("container-mid", "hide");
+      //question number
+      countOfQuestion.innerHTML = 1 + " of " + quizArray.length + " Question";
+      //question
+      let question_DIV = document.createElement("p");
+      question_DIV.classList.add("question");
+      question_DIV.innerHTML = i.question;
+      div.appendChild(question_DIV);
+      //options
+      div.innerHTML += `
+      <button class="option-div" onclick="checker(this)">${i.options[0]}</button>
+       <button class="option-div" onclick="checker(this)">${i.options[1]}</button>
+        <button class="option-div" onclick="checker(this)">${i.options[2]}</button>
+         <button class="option-div" onclick="checker(this)">${i.options[3]}</button>
+      `;
+      quizContainer.appendChild(div);
+    }
+  }
