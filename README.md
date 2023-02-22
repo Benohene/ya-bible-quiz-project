@@ -236,6 +236,7 @@ The Live link can be access by clicking on the blue link here [YA Bible QUiz for
 
 ## Acknowledge-Code
 * Most of the JS code was extracted from a you tube video and manipulated. This is the link [Coding Artist](https://www.youtube.com/watch?v=p-2G-7vLuV4&t=2286s)
+* I want to appreciate my mentor Daisy Mc Girr for her time and efforts invested in me.
 
 ## Content
 * [Font Awesome](https://fontawesome.com/). Used for icons.
