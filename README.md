@@ -6,6 +6,13 @@ View the live site [here](https://benohene.github.io/ya-bible-quiz-project/)
 
 ![Mockup](doc/readme-images/mockup.jpg)
 
+#  Table of content
+- [FEATURES](#features)
+- [DESIGN](#design)
+- [TECHNOLOGIES](#technologies-applied)
+- [TESTING](#testing)
+- [DEPLOYMENT](#deployment)
+- [CREDIT](#creditacknowledgement)
 
 # FEATURES
 
