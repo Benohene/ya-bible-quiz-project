@@ -6,6 +6,7 @@ View the live site [here](https://benohene.github.io/ya-bible-quiz-project/)
 
 ![Mockup](doc/readme-images/mockup.jpg)
 
+
 # FEATURES
 
 ## Home Page
@@ -223,3 +224,18 @@ The Live link can be access by clicking on the blue link here [YA Bible QUiz for
 5. Type git clone copied-git-url into the IDE terminal
 
 ***The project will now of been cloned on your local machine for use.***
+
+# CREDIT/ACKNOWLEDGEMENT
+
+## Acknowledge-Code
+* Most of the JS code was extracted from a you tube video and manipulated. This is the link [Coding Artist](https://www.youtube.com/watch?v=p-2G-7vLuV4&t=2286s)
+
+## Content
+* [Font Awesome](https://fontawesome.com/). Used for icons.
+* [Google Fonts](https://fonts.google.com/) Used for fonts.
+* [YouTube](http://youtube.com/)The coding of the contact page forms was inspired by a video on Youtube.
+
+## Media
+* All images from [Pexels](https://www.pexels.com/).
+* Logo was created by me using photoshop.
+* Most of the images were edited by me with photoshop.
