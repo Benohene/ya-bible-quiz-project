@@ -4,7 +4,7 @@
  */
 
 const instruction = document.getElementById("instruction-main");
-const enterQuiz= document.getElementById("lets-go");
+const enterQuiz = document.getElementById("lets-go");
 const instructionsBtn = document.getElementById("instructionsBtn");
 const closeInstruction = document.getElementsByClassName("exit")[0];
 
@@ -14,16 +14,21 @@ closeInstruction.addEventListener('click', instructHide);
 
 // Enter Quiz Buttons EventListerner
 enterQuiz.addEventListener("click", () => {
-    return window.location.assign('./quiz.html');
-  });
+  return window.location.assign('./quiz.html');
+});
 
-  // Instruction Functions
-function instructShow() {  
-    instruction.style.display = "block";
-  }
+/**
+ * Show the instruction on this function
+ */
+function instructShow() {
+  instruction.style.display = "block";
+}
 
+/**
+ * Hide the instruction on this function
+ */
 function instructHide() {
-    instruction.style.display = "none";
+  instruction.style.display = "none";
 }
 
 window.onclick = function (event) {

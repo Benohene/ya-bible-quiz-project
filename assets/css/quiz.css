@@ -230,17 +230,13 @@ footer {
   }
 }
 
-
 @media screen and (max-width: 450px) {
   .start-screen h1 {
     font-size: 38px;
     color: #fff;
-  } 
+  }
 
   #display-container {
-  margin-top: 35vh;
+    margin-top: 35vh;
+  }
 }
-}
-
-
-
