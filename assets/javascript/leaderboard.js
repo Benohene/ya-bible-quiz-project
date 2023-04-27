@@ -43,3 +43,9 @@ function openHighScore() {
 function returnHome() {
     window.location.assign('./index.html');
 }
+
+//Function to clear the Highscore
+const resetHighscoreBtn = document.getElementById('resetHighscoreBtn');
+function resetHighscore() {
+    localStorage.clear();
+}
