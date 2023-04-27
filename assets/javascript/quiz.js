@@ -242,6 +242,7 @@ function checker(userOption) {
  * initial setup
  */
 function initial() {
+  welcomeNote()
   quizContainer.innerHTML = "";
   questionCount = 0;
   scoreCount = 0;
@@ -252,15 +253,14 @@ function initial() {
   quizDisplay(questionCount);
 }
 
-/**
- * when user click on enterQuiz button
- * hide the start screen and display quiz page
- */
-startButton.addEventListener("click", () => {
-  startScreen.classList.add("hide");
-  displayContainer.classList.remove("hide");
-  initial();
-});
+/* Add a title with Username to question display */
+function welcomeNote() {
+  let welcomeStatement = document.getElementById('nameEntered');
+  let html = `
+  <h3> Welcome ${userName.value}, Please Choose the Correct Answer</h3>
+  `;
+  welcomeStatement.innerHTML = html;
+}
 
 //hide quiz and display start screen
 window.onload = () => {
