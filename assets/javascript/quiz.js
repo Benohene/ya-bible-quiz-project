@@ -83,6 +83,28 @@ const quizArray = [{
 ];
 //end of questions Array with options and correct answer
 
+/**
+ * User must enter username at start screen to enter quiz
+ * Empty entry displays invalid alert and when name entered
+ * start screen hide and display quiz page
+ */
+function start() {
+  startScreen.classList.add("hide");
+  displayContainer.classList.remove("hide");
+  initial();
+};
+
+
+function validateUser() {
+  let userName = document.getElementById("userName")
+  if (userName.value.trim() == "") {
+    alert("Invalid Username!! PLEASE ENTER A NAME");
+  }
+  else if (userName.value != "") {
+    return start();
+  }
+}
+
 //EventListerner to paly the Quiz again after finishing
 restart.addEventListener("click", () => {
   initial();

@@ -28,14 +28,14 @@
             <!--User forms to start the Quiz Start-->
             <label for="user" class="username-text">Please Enter your Username</label>
             <input type="text" id="userName" placeholder="Username" aria-label="Enter Username" /><br />
-            <button id="start-btn">Start Quiz</button>
+            <button id="start-btn" onclick="validateUser()">Start Quiz</button>
             <a href="index.html" aria-label="Visit Home Page" class="btn-home" style="text-decoration: none">Home <i
                     class="fa-solid fa-house"></i></a>
             <!--User forms to start the Quiz ends-->
         </div>
 
         <!--Add Quiz window dialog with timer, question and options-->
-        <div id="display-container">
+        <div id="display-container hide">
             <div class="header">
                 <div class="number-of-count">
                     <span class="number-of-question">1 of 3 questions</span>
