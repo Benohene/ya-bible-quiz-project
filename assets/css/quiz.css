@@ -105,7 +105,8 @@ button {
 
 #start-btn,
 #startbtn-home,
-#restart {
+#restart,
+#saveScoreBtn {
   background-color: #4b0f70;
   color: #ffffff;
   border: 3px solid #ffb400;
@@ -113,6 +114,19 @@ button {
   font-weight: 600;
   padding: 0.5em 1.8em;
   border-radius: 30px;
+}
+
+#startbtn-home {
+  margin-top: 10px;
+}
+
+#restart {
+  margin-top: 0.9em;
+  margin-bottom: 10px;
+}
+
+#saveScoreBtn {
+  width: 250px;
 }
 
 /*Home Button on Start page*/
@@ -246,7 +260,7 @@ button {
 }
 
 #user-score {
-  font-size: 50px;
+  font-size: 40px;
   font-weight: 600;
   color: #ffffff;
 }

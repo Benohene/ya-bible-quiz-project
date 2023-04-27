@@ -1,5 +1,5 @@
 // Assign the IDS and CLASS to variables
-let timeLeft = document.querySelector(".time-left");
+let timer = document.querySelector(".timer");
 let quizContainer = document.getElementById("container");
 let nextBtn = document.getElementById("next-button");
 let countOfQuestion = document.querySelector(".number-of-question");
@@ -91,7 +91,7 @@ const quizArray = [{
 function start() {
   startScreen.classList.add("hide");
   displayContainer.classList.remove("hide");
-  initial();
+  mainQuestionDisplay();
 };
 
 
@@ -107,7 +107,7 @@ function validateUser() {
 
 //EventListerner to paly the Quiz again after finishing
 restart.addEventListener("click", () => {
-  initial();
+  mainQuestionDisplay();
   displayContainer.classList.remove("hide");
   scoreContainer.classList.add("hide");
 });
@@ -130,7 +130,7 @@ nextBtn.addEventListener(
       scoreContainer.classList.remove("hide");
       //user score
       userScore.innerHTML =
-        "Your score is " + scoreCount + " out of " + questionCount;
+      `${userName.value}, Your score is ${scoreCount} out of ${questionCount}`;
     } else {
       //display questionCount
       countOfQuestion.innerHTML =
@@ -151,7 +151,7 @@ nextBtn.addEventListener(
 const timerDisplay = () => {
   countdown = setInterval(() => {
     count--;
-    timeLeft.innerHTML = `${count}s`;
+    timer.innerHTML = `${count}s`;
     if (count == 0) {
       clearInterval(countdown);
       displayNext();
@@ -241,7 +241,7 @@ function checker(userOption) {
 /**
  * initial setup
  */
-function initial() {
+function mainQuestionDisplay() {
   welcomeNote()
   quizContainer.innerHTML = "";
   questionCount = 0;
