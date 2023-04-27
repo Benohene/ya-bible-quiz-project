@@ -44,7 +44,7 @@ function returnHome() {
     window.location.assign('./index.html');
 }
 
-//Function to clear the Highscore
+//Function to clear the Highscore-taken from W3
 const resetHighscoreBtn = document.getElementById('resetHighscoreBtn');
 function resetHighscore() {
     localStorage.clear();

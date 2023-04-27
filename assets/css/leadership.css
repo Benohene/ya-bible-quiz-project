@@ -156,3 +156,19 @@ table {
   td {
     border: 1px solid #4b0f70;
   }
+
+  /*Media Queries for larger screens from 1200px*/
+@media screen and (max-width: 1200px) {
+    #homepage-main {
+      width: 80%;
+      height: 850px;
+    }
+  }
+  
+  /*Media Queries for smaller screen from 480px and below to 320px*/
+  @media screen and (max-width: 480px) {
+    #homepage-main {
+      width: 90%;
+      height: auto;
+    }
+  }

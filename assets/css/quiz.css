@@ -270,15 +270,32 @@ button {
   #display-container {
     width: 70%;
   }
+
+  #userName {
+    width: 400px;
+  }
+  .start-screen h1 {
+    margin-top: 70px;
+    font-size: 30px;
+    color: #fff;
+  }
 }
 
 @media screen and (max-width: 450px) {
   .start-screen h1 {
-    font-size: 38px;
+    margin-top: 70px;
+    font-size: 30px;
     color: #fff;
   }
 
   #display-container {
     margin-top: 35vh;
+    scale: 90%;
+    left: 45%;
+  }
+
+  #userName {
+    width: 300px;
   }
 }
+
