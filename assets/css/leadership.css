@@ -126,3 +126,33 @@ footer {
   transform: scale(1.5);
   cursor: pointer;
 }
+
+/* Styles for leaderboard table */
+table {
+    font-weight: 600;
+    padding: 10px;
+    height: auto;
+    border-spacing: 0;
+  }
+  
+  
+  th {
+    margin: 0;
+    padding: 0;
+    background-color: #4b0f70;
+    width: 250px;
+    color: #fff;
+  }
+  
+  tr {
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    width: 250px;
+    height: 30px;
+    color: #4b0f70;
+  }
+  
+  td {
+    border: 1px solid #4b0f70;
+  }
