@@ -13,6 +13,15 @@ const closeInstruction = document.getElementsByClassName("exit")[0];
 instructionsBtn.addEventListener('click', instructShow);
 closeInstruction.addEventListener('click', instructHide);
 
+// Leaderboard Buttons assigned to leaderboard.html
+function leaderboard() {
+  window.location.assign('./leaderboard.html');
+}
+
+/*leaderboardBtn.addEventListener("click", () => {
+  window.location.assign('./leaderboard.html');
+});*/
+
 // Enter Quiz Buttons EventListerner
 enterQuiz.addEventListener("click", () => {
   return window.location.assign('./quiz.html');
