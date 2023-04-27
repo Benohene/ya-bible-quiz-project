@@ -267,3 +267,28 @@ window.onload = () => {
   startScreen.classList.remove("hide");
   displayContainer.classList.add("hide");
 };
+
+//ScoreBoard
+//Score borderRadius: 
+let leaderboardMain = document.querySelector('.leaderboard-main');
+let highScores = JSON.parse(localStorage.getItem("highScores")) || [];
+let highScoresTable = document.getElementById("high-scores");
+
+const saveScoreBtn = document.querySelector('#saveScoreBtn');
+saveScoreBtn.addEventListener('click', saveHighScore);
+
+function saveHighScore(event) {
+  /*scoreContainer.classList.add("hide");
+  leaderboardMain.classList.remove("hide");*/
+  event.preventDefault()
+  let highScore = {
+    score: scoreCount,
+    name: userName.value
+  };
+  highScores.push(highScore);
+  highScores.sort((a, b) => b.score - a.score); // Sorts scores into descending order
+  highScores.splice(10); // Only shows 10 high scores
+
+  localStorage.setItem("highScores", JSON.stringify(highScores));
+  window.location.assign('./leaderboard.html');
+}
