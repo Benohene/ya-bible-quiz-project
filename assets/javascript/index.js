@@ -4,6 +4,7 @@
  */
 
 const instruction = document.getElementById("instruction-main");
+const leaderboardBtn = document.getElementById('leaderboardBtn');
 const enterQuiz = document.getElementById("lets-go");
 const instructionsBtn = document.getElementById("instructionsBtn");
 const closeInstruction = document.getElementsByClassName("exit")[0];
