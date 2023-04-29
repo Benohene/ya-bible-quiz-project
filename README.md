@@ -291,6 +291,9 @@ The result was quiet good. The testing was done one all the pages both on deskto
 - ### Username Input and Start QUiz button
 
   - Empty Input space will give an error alert-PASS
+
+  - ![Input name validation](doc/testing-images/username-alert.jpg)
+
   - Enter any name and click on Start Quiz to get access to start the Quiz game-PASS
 
 - ### Home Button
@@ -317,10 +320,13 @@ The result was quiet good. The testing was done one all the pages both on deskto
 
   - Questions received from the Question array and displayed in the question text area-PASS
 
-- ### Options/Answers and CORRECT ANSWER
+- ### Options/Answers
 
   - Clicking on any of the 4 buttons will initiate the user's choice of answer-PASS
   - The correct answer will be green colour and the wrong answer will be red-PASS
+  - After an option is clicked whether correct or wrong, the rest is deactivated.
+  - ![option validation](doc/testing-images/option-validation.JPG)
+  - ![option validation](doc/testing-images/option2-validation.JPG)
 
 - ### Next Button
   - Clicking this button will skip to the next question-PASS
