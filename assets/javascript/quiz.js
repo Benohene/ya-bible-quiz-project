@@ -268,8 +268,10 @@ window.onload = () => {
   displayContainer.classList.add("hide");
 };
 
-//ScoreBoard
-//Score borderRadius: 
+/**
+ * Scoreboard
+ * idea taken from Brain Design and Manupulated
+ */
 let leaderboardMain = document.querySelector('.leaderboard-main');
 let highScores = JSON.parse(localStorage.getItem("highScores")) || [];
 let highScoresTable = document.getElementById("high-scores");

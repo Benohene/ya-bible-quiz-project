@@ -18,10 +18,6 @@ function leaderboard() {
   window.location.assign('./leaderboard.html');
 }
 
-/*leaderboardBtn.addEventListener("click", () => {
-  window.location.assign('./leaderboard.html');
-});*/
-
 // Enter Quiz Buttons EventListerner
 enterQuiz.addEventListener("click", () => {
   return window.location.assign('./quiz.html');
