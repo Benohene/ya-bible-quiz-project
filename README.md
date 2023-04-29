@@ -10,6 +10,7 @@ View the live site [here](https://benohene.github.io/ya-bible-quiz-project/)
 - [FEATURES](#features)
 - [DESIGN](#design)
 - [TECHNOLOGIES](#technologies-applied)
+- [USER EXPERIENCE](#user-experience)
 - [TESTING](#testing)
 - [DEPLOYMENT](#deployment)
 - [CREDIT](#creditacknowledgement)
@@ -98,7 +99,7 @@ In the future, a username form will be create to allow users to enter their deta
 ### Play Again
 ![Play Again](doc/readme-images/playagain.jpg)
 
-
+***
 # TECHNOLOGIES APPLIED
 
 * HTML - The structure of the Homepage and Quiz game page were developed using HTML as the main language.
@@ -114,7 +115,20 @@ In the future, a username form will be create to allow users to enter their deta
 * Font Awesome - Provides icons used to structures and give details in HTML https://fontawesome.com/ 
 
 * Photoshop - Used to create wireframes and also edit pictures and logo
+***
+# USER EXPERIENCE
+## Project goal
+The project is an application for anyone who wants to test their basic bible knowledge.
+It is also an application to help you know the things you don't know about the bible.
+Questions will be updated weekly.
 
+## User Stories
+* As a user, I want to be able to have a clear understanding of how to use the application.
+* it is important for me the user get access to instructions on how to use the application.
+* As a user, I want to be able to input my name so I can store my name and score after each play
+* As a user, I expect the questions to be random so even if I repeat the play I won't be able to guess easily. This will be good for acquiring knowledge through the quiz game.
+* As a user, I want to be able to access my name with the score each time I play to know my highest score.
+***
 # TESTING
 ## Structure and Styling
 During testing, the Unicorn Revealer and Wave were used to check for structure and styling error and all were fixed accordingly. All pages were run by the Unicorn revealer and Wave to fix errors.
