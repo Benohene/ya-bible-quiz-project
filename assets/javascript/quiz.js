@@ -278,8 +278,6 @@ const saveScoreBtn = document.querySelector('#saveScoreBtn');
 saveScoreBtn.addEventListener('click', saveHighScore);
 
 function saveHighScore(event) {
-  /*scoreContainer.classList.add("hide");
-  leaderboardMain.classList.remove("hide");*/
   event.preventDefault()
   let highScore = {
     score: scoreCount,
