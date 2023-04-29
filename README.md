@@ -44,6 +44,7 @@ View the live site [here](https://benohene.github.io/ya-bible-quiz-project/)
 - This section contains a general information about the website.
 - this section also highlight on what user should expect from the website.
 - <strong>INSTRUCTION BUTTON</strong> User can click on the this button to access a POP-UP window for instructions to the quiz.
+- <strong>LEADERBOARD BUTTON</strong> User can click on the this button to access the leaderboard page which contains Username, score and date of the game played.
 - <strong>ENTER THE QUIZ BUTTON</strong> user can click on this button to access navigate to the start screen of the quiz.
 
 ![Homepage main content](doc/readme-images/homepage-main-content.jpg)
@@ -64,12 +65,14 @@ View the live site [here](https://benohene.github.io/ya-bible-quiz-project/)
 ### Start Screen
 
 - This is the introduction page to enter the Quiz game page.
-- User must click on <stong>ENTER QUIZ BUTTON</strong> to display the quiz question.
+- User Must enter Username in the input space.
+- User must click on <stong>START QUIZ BUTTON</strong> to display the quiz question.
 
 ![Start screen](doc/readme-images/quiz-startpage.jpg)
 
 ### Quiz Dispalay Screen
 
+- <strong>Welcome Note</strong> this is the short welcome note with Username typed into the start page input.
 - <strong>Question Count</strong> This part of the section displays the question count as user continue with answering the quiz question.
 - <strong>Timer</strong> this is the timeout to let user know how many seconds left to answer question.
 - <strong>Main Question content</strong> The main question area display the question and 4 options to answer.
@@ -87,11 +90,12 @@ View the live site [here](https://benohene.github.io/ya-bible-quiz-project/)
 - When the user choose the wrong answer, it gives a red color feedback on the option choosen and green on the correct answer.
   ![Wrong Answer](doc/readme-images/wrong-answer.jpg)
 
-### Score and Play Again Page
+### End Page
 
-- This page displays the score after all question has been answered correctly or not.
+- This page displays the score after all question has been answered correctly or not-This also have username.
 - The <strong>PLAY AGAIN BUTTON</strong> allow users to restart the quiz game again or click on the LOGO to return to the homepage.
-  ![Wrong Answer](doc/readme-images/score-page.jpg)
+- The <strong>SAVE BUTTON</strong> allow users save the score and redirect user to the Leaderboard page.
+  ![End Page](doc/readme-images/score-page.jpg)
 
 ## FUTURE FEATURES
 
@@ -119,10 +123,13 @@ In the future, a username form will be create to allow users to enter their deta
 
 ![Quiz Display Screen](doc/readme-images/questionpage.jpg)
 
-### Play Again
+### End Page
 
-![Play Again](doc/readme-images/playagain.jpg)
+![End page](doc/readme-images/playagain.jpg)
 
+### Leaderboard Page
+
+![Leaderboard page](doc/readme-images/leaderboard.jpg)
 ---
 
 # TECHNOLOGIES APPLIED
@@ -175,6 +182,8 @@ During testing, the Unicorn Revealer and Wave were used to check for structure a
 <strong>Quiz Display Page</strong>
 ![Unicorn Revealer](doc/testing-images/quiz.jpg)
 
+<strong>Leaderboard Page</strong>
+![Unicorn Revealer](doc/testing-images/leaderboard.jpg)
 ### Wave Web Accessibility
 
 ![Wave](doc/testing-images/home-wave.jpg)
@@ -262,29 +271,30 @@ The result was quiet good. The testing was done one all the pages both on deskto
 
 - ### Leaderboard Button
 
-    * Clicking on the Leaderboard button will navigate users to the locally stored score on the leaderboard page either empty or with data-PASS
+  - Clicking on the Leaderboard button will navigate users to the locally stored score on the leaderboard page either empty or with data-PASS
 
 - ### Enter Quiz Button
 
-    * This will navigate from the homepage to the start page for username input and also access to start the quiz game-PASS
+  - This will navigate from the homepage to the start page for username input and also access to start the quiz game-PASS
 
 - ### Footer
-  With 3 social media links. Click on icons to navigate to various social media platforms in a new window-PASS
+  - With 3 social media links. Click on icons to navigate to various social media platforms in a new window-PASS
 
-***
+---
+
 ### <b>Start Page</b>
 
 - ### Logo
 
-  The logo is without link-PASS
+  - The logo is without link-PASS
 
 - ### Username Input and Start QUiz button
 
-  Empty Input space will give an error alert-PASS
-  Enter any name and click on Start Quiz to get access to start the Quiz game-PASS
+  - Empty Input space will give an error alert-PASS
+  - Enter any name and click on Start Quiz to get access to start the Quiz game-PASS
 
 - ### Home Button
-  Clicking this button will navigate the user back to Homepage-PASS
+  - Clicking this button will navigate the user back to Homepage-PASS
 
 ---
 
