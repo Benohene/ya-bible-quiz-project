@@ -46,6 +46,7 @@ View the live site [here](https://benohene.github.io/ya-bible-quiz-project/)
 - <strong>INSTRUCTION BUTTON</strong> User can click on the this button to access a POP-UP window for instructions to the quiz.
 - <strong>LEADERBOARD BUTTON</strong> User can click on the this button to access the leaderboard page which contains Username, score and date of the game played.
 - <strong>ENTER THE QUIZ BUTTON</strong> user can click on this button to access navigate to the start screen of the quiz.
+- <strong>FEEDBACK BUTTON</strong> user can click on this button to be redirected to send feedback message.
 
 ![Homepage main content](doc/readme-images/homepage-main-content.jpg)
 
@@ -276,6 +277,11 @@ The result was quiet good. The testing was done one all the pages both on deskto
 - ### Enter Quiz Button
 
   - This will navigate from the homepage to the start page for username input and also access to start the quiz game-PASS
+
+- ### Feedback Button
+
+  - This will redirect the user to any available/default email app to send emails-PASS
+![Feedback](doc/testing-images/email-to.jpg)
 
 - ### Footer
   - With 3 social media links. Click on icons to navigate to various social media platforms in a new window-PASS
