@@ -84,7 +84,7 @@ header {
 }
 
 /*Add styles to Enter Quiz Game button*/
-#lets-go {
+#lets-go, #email {
     width: 100%;
     padding: .4rem 2rem;
     background-color: #4b0f70;
@@ -94,7 +94,13 @@ header {
     font-size: 1.5rem;
     font-weight: 600;
     cursor: pointer;
+    margin-bottom: 20px;
 }
+
+#email a {
+    color: #f49f1c;
+    text-decoration: none;
+  }
 
 /*Add styling to instructions pop up box*/
 .instructions {
