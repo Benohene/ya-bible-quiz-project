@@ -100,7 +100,7 @@ View the live site [here](https://benohene.github.io/ya-bible-quiz-project/)
 
 ## FUTURE FEATURES
 
-In the future, a username form will be create to allow users to enter their details and store them on a leaderboard. This will be more entertaining to let user challenge themselves.
+In the future, the feedback to developer will be reinvented and improved in functionality
 
 ---
 
@@ -434,7 +434,7 @@ The Live link can be access by clicking on the blue link here [YA Bible QUiz for
 
 - [Font Awesome](https://fontawesome.com/). Used for icons.
 - [Google Fonts](https://fonts.google.com/) Used for fonts.
-- [YouTube](http://youtube.com/)The coding of the contact page forms was inspired by a video on Youtube.
+
 
 ## Media
 
